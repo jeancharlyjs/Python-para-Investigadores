@@ -1,5 +1,5 @@
 # Python para la Investigación Científica
-# Temario Completo de Python para Inteligencia Artificial
+## Temario Completo de Python para Inteligencia Artificial
 
 ## MÓDULO 1: FUNDAMENTOS DE PYTHON
 
