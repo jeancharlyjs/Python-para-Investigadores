@@ -1,20 +1,20 @@
 # MÓDULO 1: FUNDAMENTOS DE PYTHON
 ## Tu Primera Herramienta Científica
 
-## 🎯 **Objetivos de Aprendizaje**
+## OBJETIVOS DE APRENDIZAJE
 
 Al finalizar este módulo, serás capaz de:
-1. ✅ **Configurar** tu entorno científico de Python
-2. ✅ **Comprender** los conceptos básicos de programación
-3. ✅ **Manipular** diferentes tipos de datos científicos
-4. ✅ **Realizar** operaciones matemáticas básicas
-5. ✅ **Interactuar** con programas mediante entrada/salida
+1. Configurar tu entorno científico de Python
+2. Comprender los conceptos básicos de programación
+3. Manipular diferentes tipos de datos científicos
+4. Realizar operaciones matemáticas básicas
+5. Interactuar con programas mediante entrada/salida
 
 ---
 
 ## 1.1 Introducción a Python
 
-### 🧠 **Concepto: ¿Qué es Python y por qué es ideal para ciencia?**
+### CONCEPTO: ¿Qué es Python y por qué es ideal para ciencia?
 
 **Python** es un lenguaje de programación de alto nivel que se ha convertido en el **estándar de facto para la investigación científica**. Pero ¿por qué?
 
@@ -23,7 +23,7 @@ Al finalizar este módulo, serás capaz de:
 - **Java** sería una centrífuga industrial: robusta pero pesada
 - **Python** sería un **microscopio confocal moderno**: fácil de usar, versátil y potente
 
-### 📊 **Ventajas de Python para Ciencia**
+### VENTAJAS DE PYTHON PARA CIENCIA
 
 | Característica | Beneficio Científico | Ejemplo de Aplicación |
 |---------------|---------------------|----------------------|
@@ -33,9 +33,9 @@ Al finalizar este módulo, serás capaz de:
 | **Interpretado** | Prueba inmediata de hipótesis computacionales | Simulación interactiva de modelos |
 | **Open Source** | Total transparencia y reproducibilidad | Investigación reproducible y verificable |
 
-### 🛠️ **Instalación y Configuración del Entorno**
+### INSTALACIÓN Y CONFIGURACIÓN DEL ENTORNO
 
-#### **Paso 1: Instalar Python**
+#### Paso 1: Instalar Python
 ```bash
 # Verifica si ya tienes Python instalado
 python --version
@@ -45,7 +45,7 @@ python --version
 # https://www.python.org/downloads/
 ```
 
-#### **Paso 2: Configurar Entorno Virtual (Buenas Prácticas)**
+#### Paso 2: Configurar Entorno Virtual (Buenas Prácticas)
 ```bash
 # Crear entorno virtual para proyectos científicos
 python -m venv lab_cientifico
@@ -57,7 +57,7 @@ lab_cientifico\Scripts\activate
 source lab_cientifico/bin/activate
 ```
 
-#### **Paso 3: Instalar Herramientas Básicas**
+#### Paso 3: Instalar Herramientas Básicas
 ```bash
 # Instalar IPython (Python interactivo mejorado)
 pip install ipython
@@ -70,7 +70,7 @@ ipython --version
 jupyter --version
 ```
 
-### 🧪 **Primeros Pasos: "Hello World" Científico**
+### PRIMEROS PASOS: "HELLO WORLD" CIENTÍFICO
 
 ```python
 # EJEMPLO 1: El clásico "Hello World"
@@ -78,19 +78,19 @@ print("Hello, Scientific World!")
 # Output: Hello, Scientific World!
 
 # EJEMPLO 2: Versión científica
-print("🔬 ¡Bienvenido al Laboratorio Digital de Python!")
-print("🧪 Preparado para comenzar experimentos computacionales")
-print("📊 Python versión:", __import__('sys').version)
+print("¡Bienvenido al Laboratorio Digital de Python!")
+print("Preparado para comenzar experimentos computacionales")
+print("Python versión:", __import__('sys').version)
 ```
 
-### 💡 **Consejo del Docente**
+### CONSEJO DEL DOCENTE
 > **No te preocupes por memorizar todo ahora**. La programación científica se aprende haciendo, no memorizando. Cada concepto lo practicaremos con ejemplos reales.
 
 ---
 
 ## 1.2 Variables y Tipos de Datos Primitivos
 
-### 🧠 **Concepto: ¿Qué es una Variable en Ciencia?**
+### CONCEPTO: ¿Qué es una Variable en Ciencia?
 
 **Analogía del laboratorio**: Una variable es como un **tubo de ensayo etiquetado**. Tiene:
 - **Nombre** (la etiqueta)
@@ -104,27 +104,27 @@ ph_solucion = 7.2           # Tubo "ph_solucion" con pH 7.2
 nombre_reactivo = "HCl"     # Tubo "nombre_reactivo" con "HCl"
 ```
 
-### 📝 **Nomenclatura de Variables (PEP 8)**
+### NOMENCLATURA DE VARIABLES (PEP 8)
 
 **PEP 8** es la guía de estilo oficial de Python. Para ciencia:
 
 ```python
-# ✅ CORRECTO - Estilo científico claro
+# CORRECTO - Estilo científico claro
 temperatura_promedio = 22.5
 concentracion_molar = 0.1
 velocidad_reaccion = 2.5e-3
 muestra_control = True
 
-# ❌ EVITAR - Confuso o poco científico
+# EVITAR - Confuso o poco científico
 tmp = 22.5          # ¿Qué es tmp?
 conc = 0.1          # ¿Qué concentración?
 v_r = 2.5e-3        # ¿Velocidad de qué?
 ctrl = True         # ¿Control de qué?
 ```
 
-### 🔤 **Strings (Cadenas de Texto)**
+### STRINGS (CADENAS DE TEXTO)
 
-#### **Creación y Manipulación**
+#### Creación y Manipulación
 ```python
 # EJEMPLO CIENTÍFICO: Nombres de compuestos químicos
 compuesto = "Ácido acetilsalicílico"
@@ -136,17 +136,17 @@ print(f"Fórmula: {formula}")
 print(f"Nombre común: {nombre_comun}")
 ```
 
-#### **Métodos de Strings Útiles en Ciencia**
+#### Métodos de Strings Útiles en Ciencia
 ```python
 # Datos de un experimento
 datos_crudos = "Temperatura:25.5,Presión:1013,Humedad:65%"
 
-# 🧪 Separar datos
+# Separar datos
 valores = datos_crudos.split(',')
 print("Valores separados:", valores)
 # Output: ['Temperatura:25.5', 'Presión:1013', 'Humedad:65%']
 
-# 🧪 Extraer números
+# Extraer números
 temperatura_str = valores[0]  # 'Temperatura:25.5'
 temperatura_num = temperatura_str.split(':')[1]  # '25.5'
 temperatura = float(temperatura_num)  # Convertir a número
@@ -154,7 +154,7 @@ temperatura = float(temperatura_num)  # Convertir a número
 print(f"Temperatura: {temperatura}°C")
 ```
 
-#### **Indexación y Slicing**
+#### Indexación y Slicing
 ```python
 # EJEMPLO: Analizar código de muestra
 codigo_muestra = "BIO-2024-001-A"
@@ -168,9 +168,9 @@ replica = codigo_muestra[13]    # 'A'
 print(f"Tipo: {tipo}, Año: {anio}, Número: {numero}, Réplica: {replica}")
 ```
 
-#### **Formato de Strings (f-strings - Recomendado)**
+#### Formato de Strings (f-strings - Recomendado)
 ```python
-# 📊 Resultados de experimento
+# Resultados de experimento
 reactivo = "NaOH"
 concentracion = 0.1
 volumen = 50
@@ -188,11 +188,11 @@ print(f"pH medido: {ph:.2f}")  # Muestra 2 decimales: 7.25
 print(f"pH medido: {ph:.3f}")  # Muestra 3 decimales: 7.245
 ```
 
-### 🔢 **Integers y Floats (Números Enteros y Decimales)**
+### INTEGERS Y FLOATS (NÚMEROS ENTEROS Y DECIMALES)
 
-#### **Operaciones Básicas**
+#### Operaciones Básicas
 ```python
-# 🧪 Cálculos de laboratorio básicos
+# Cálculos de laboratorio básicos
 
 # Enteros (conteos, repeticiones)
 repeticiones_experimento = 3
@@ -214,9 +214,9 @@ print(f"Constante de Avogadro: {constante_avogadro}")
 print(f"Carga del electrón: {carga_electron} C")
 ```
 
-#### **Conversión de Tipos**
+#### Conversión de Tipos
 ```python
-# ⚠️ CUIDADO: Python es de tipado dinámico pero estricto
+# CUIDADO: Python es de tipado dinámico pero estricto
 
 # Esto funciona
 lectura_str = "25.5"
@@ -231,11 +231,11 @@ temperatura = float("25.5") + 1
 print(f"Temperatura ajustada: {temperatura}°C")
 ```
 
-### ⚖️ **Boolean (Valores Lógicos)**
+### BOOLEAN (VALORES LÓGICOS)
 
-#### **True y False en Experimentos**
+#### True y False en Experimentos
 ```python
-# 📊 Control de condiciones experimentales
+# Control de condiciones experimentales
 
 experimento_completado = True
 datos_validos = False
@@ -243,9 +243,9 @@ equipo_calibrado = True
 
 # Verificación de condiciones
 if experimento_completado and equipo_calibrado:
-    print("✅ Experimento listo para análisis")
+    print("Experimento listo para análisis")
 else:
-    print("❌ Verificar condiciones experimentales")
+    print("Verificar condiciones experimentales")
 
 # Valores truthy y falsy
 muestra = ""  # String vacío es falsy
@@ -255,10 +255,10 @@ else:
     print("No hay muestra")  # Esto se ejecuta
 ```
 
-### 🔮 **Complex (Números Complejos)**
+### COMPLEX (NÚMEROS COMPLEJOS)
 
 ```python
-# 🎯 Aplicación: Análisis de circuitos eléctricos (ingeniería)
+# Aplicación: Análisis de circuitos eléctricos (ingeniería)
 # o funciones de onda (física cuántica)
 
 # Número complejo: a + bj (j es la unidad imaginaria)
@@ -284,9 +284,9 @@ print(f"Magnitud: {magnitud:.2f} Ω, Fase: {fase:.2f} rad")
 
 ## 1.3 Operadores
 
-### ➕ **Operadores Aritméticos**
+### OPERADORES ARITMÉTICOS
 ```python
-# 🧪 Cálculos de preparación de soluciones
+# Cálculos de preparación de soluciones
 
 # Datos iniciales
 concentracion_stock = 2.0  # M (molar)
@@ -298,8 +298,8 @@ volumen_stock = (concentracion_final * volumen_necesario) / concentracion_stock
 volumen_agua = volumen_necesario - volumen_stock
 
 print(f"Para preparar {volumen_necesario} mL de {concentracion_final}M:")
-print(f"  • Tomar {volumen_stock:.1f} mL de stock {concentracion_stock}M")
-print(f"  • Añadir {volumen_agua:.1f} mL de agua destilada")
+print(f"  - Tomar {volumen_stock:.1f} mL de stock {concentracion_stock}M")
+print(f"  - Añadir {volumen_agua:.1f} mL de agua destilada")
 
 # Operadores especiales
 # División entera (//) y módulo (%)
@@ -313,9 +313,9 @@ print(f"\nSe necesitan {tubos_completos} tubos completos")
 print(f"Sobran {muestras_sobrantes} muestras para otro tubo")
 ```
 
-### ⚖️ **Operadores de Comparación**
+### OPERADORES DE COMPARACIÓN
 ```python
-# 📊 Control de calidad experimental
+# Control de calidad experimental
 
 temperatura_actual = 25.3
 temperatura_objetivo = 25.0
@@ -333,9 +333,9 @@ print(f"¿Demasiado caliente? {demasiado_caliente}")
 print(f"¿Demasiado frío? {demasiado_frio}")
 ```
 
-### 🔗 **Operadores Lógicos**
+### OPERADORES LÓGICOS
 ```python
-# 🧪 Verificación de condiciones experimentales
+# Verificación de condiciones experimentales
 
 temperatura_ok = True
 ph_ok = False
@@ -354,12 +354,12 @@ print(f"¿Cultivo creciendo? {cultivo_creciendo}")
 
 # Operador NOT (inversión)
 if not ph_ok:
-    print("⚠️  ADVERTENCIA: pH fuera de rango. Ajustar inmediatamente.")
+    print("ADVERTENCIA: pH fuera de rango. Ajustar inmediatamente.")
 ```
 
-### 📊 **Jerarquía de Operadores (Precedencia)**
+### JERARQUÍA DE OPERADORES (PRECEDENCIA)
 ```python
-# ⚠️ IMPORTANTE: El orden SÍ importa en cálculos científicos
+# IMPORTANTE: El orden SÍ importa en cálculos científicos
 
 # Ejemplo: Cálculo de densidad
 masa = 10  # gramos
@@ -380,9 +380,9 @@ print(f"Densidad 2 ((masa/volumen)²): {densidad2} (g/mL)²")
 
 ## 1.4 Entrada y Salida
 
-### 🖨️ **print() - Mostrar Información en Consola**
+### PRINT() - MOSTRAR INFORMACIÓN EN CONSOLA
 ```python
-# 📊 Presentación profesional de resultados
+# Presentación profesional de resultados
 
 # Resultados de un experimento
 compuesto = "Glucosa"
@@ -407,11 +407,11 @@ print("Temperatura", 25.5, "°C", sep=" | ")
 print("Conductividad", 1.2, "mS/cm", sep=" | ")
 ```
 
-### ⌨️ **input() - Recibir Datos del Usuario**
+### INPUT() - RECIBIR DATOS DEL USUARIO
 ```python
-# 🧪 Programa interactivo para preparar soluciones
+# Programa interactivo para preparar soluciones
 
-print("🧪 PREPARADOR DE SOLUCIONES 🧪")
+print("PREPARADOR DE SOLUCIONES")
 print("-" * 30)
 
 # Entrada de datos
